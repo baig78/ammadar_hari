@@ -1,0 +1,205 @@
+/* image slider */
+.carousel {
+    position: relative;
+}
+
+/* Custom styles for the headings and buttons */
+.carousel-caption {
+    text-align: center;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    color: #fff;
+}
+
+.custom-btn {
+    margin-right: 10px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.red-btn {
+    background-color: #ff4444;
+}
+
+.gray-transparent-btn {
+    background-color: transparent;
+    border: 2px solid #ccc;
+}
+
+.gray-transparent-btn:hover {
+    background-color: #eee;
+}
+
+
+
+
+
+.section {
+    
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+}
+.section > p{color: #000;}
+
+.section-heading {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 15px;
+    background: white;
+    padding: 0px 40px;
+    z-index: 9;
+}
+
+.section::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    border-bottom: 0.1em solid red;
+    position: absolute;
+    bottom: 41px;
+    top:37px;
+    left: 30%;
+    z-index: 0;
+    width: 40%;
+}
+
+
+
+ /* Custom styles for the section */
+ .custom-section {
+    padding: 40px 0;
+}
+
+/* Custom styles for the boxes */
+.custom-box {
+    
+    padding: 20px;
+    text-align: center;
+}
+
+.custom-box > div{
+    border: 1px solid #ccc;
+}
+.custom-box > div > h3{
+    font-size: 20px;
+}
+
+.custom-icon {
+    color: red;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* background image section */
+.contact-section1 {
+    /* public/assets/bg01.jpg */
+    background: url('../../../public/assets/bg01.jpg') center/cover no-repeat;
+    position: relative;
+    height: 400px; /* Adjust the height as needed */
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Gray transparent overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
+}
+
+/* Custom styles for the text */
+.contact-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-left: 45px;
+}
+
+.contact-paragraph {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Custom styles for the button */
+.red-btn {
+    background-color: #ff4444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.red-btn:hover {
+    background-color: #cc0000;
+}
+
+
+
+
+
+/* footer section */
+.contact-section {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+.contact-section>div{
+    border-bottom: 1px solid #ffffff57;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.contact-subsection {
+    margin-bottom: 30px;
+}
+
+.contact-icon {
+    color: #ff4444;
+    font-size: 36px !important;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.contact-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.contact-text {
+    font-size: 18px;
+    text-align: left;
+    padding-left: 45px;
+}
+
+
+
+.copyright-section {
+    background-color: #555; /* Gray background color */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0;
+}
