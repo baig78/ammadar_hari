@@ -5,7 +5,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-// import logo from "../../assets/logo.png";
 
 const Header = () => {
   const location = useLocation();
@@ -38,7 +37,6 @@ const Header = () => {
           <Navbar expand="lg" sticky="top" className="shadow p-3 ">
             <Container>
               <Navbar.Brand href="/">
-                {/* <img src={logo} className="site-logo" alt="consaint" /> */}
                 <img
                   src="../../assets/logo.png"
                   alt="Logo"
@@ -119,10 +117,6 @@ const Header = () => {
         </Link>
       </ul>
     </nav> */}
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
       </div>
     </>
   );
