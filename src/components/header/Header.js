@@ -5,6 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+// import ImageCarousel from "../imageCarousel/ImageCarousel";
 
 const Header = () => {
   const location = useLocation();
@@ -16,25 +17,24 @@ const Header = () => {
           <div class="contact-info">
             <div>
               {/* <img src="phone-icon.png" alt="Phone"/> */}
-              <i class="fa fa-phone"></i> &nbsp;
-              <span>+1 123-456-7890</span>
+              <i class="fas fa-phone-alt"></i>&nbsp;
+              <span>+1 703-228-9195</span>
             </div>
             <div>
               {/* <img src="email-icon.png" alt="Email"/> */}
-              <i class="fa fa-envelope-o"></i> &nbsp;
-              <span>example@example.com</span>
+              <i class="far fa-envelope"></i> &nbsp;
+              <span>info@Ammadar.com</span>
             </div>
           </div>
           <div class="social-icons">
-            <i class="fa fa-facebook-f"></i>
-            <i class="fa fa-facebook-f"></i>
-            {/* 
-            <img src="facebook-icon.png" alt="Facebook"/>
-            <img src="twitter-icon.png" alt="Twitter"/> */}
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
           </div>
         </div>
         <div>
-          <Navbar expand="lg" sticky="top" className="shadow p-3 ">
+          <Navbar expand="lg" sticky="top" className=" p-3 ">
             <Container>
               <Navbar.Brand href="/">
                 <img
@@ -87,6 +87,7 @@ const Header = () => {
               </Navbar.Collapse>
             </Container>
           </Navbar>
+          {/* <ImageCarousel /> */}
           {/* </div> */}
         </div>
 
@@ -117,9 +118,9 @@ const Header = () => {
         </Link>
       </ul>
     </nav> */}
+        {/* href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" */}
       </div>
     </>
   );
 };
-
 export default Header;

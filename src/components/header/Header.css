@@ -1,5 +1,5 @@
 /* Add this CSS in your stylesheet or style block */
-.top-header{
+.top-header {
   position: absolute;
   top: 0px;
   z-index: 999;
@@ -50,22 +50,24 @@
     padding: 10px;
     margin: 5px 0;
   }
+  .navbar-toggler {
+    background-color: #afafaf;
+  }
+  .top-header .header {
+    display: none;
+  }
 }
-
-
-
-
 
 /* new styles */
 .header {
   height: 40px;
   /* background-color: #333333d1; */
-  color: #fff;
+  color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  border-bottom: 1px solid #fff6; /* Add a bottom border */
+  border-bottom: 1px solid var(--secondary-color); /* Add a bottom border */
   width: 80%;
   margin-left: 10%;
 }
@@ -74,17 +76,17 @@
   display: flex;
   align-items: center;
 }
-.contact-info >div{
-  font-size:12px;
+.contact-info > div {
+  font-size: 12px;
 }
-.contact-info >div:nth-child(1){
+.contact-info > div:nth-child(1) {
   margin-right: 20px;
 }
-.contact-info >div:nth-child(1)::after{
-  content:'';
+.contact-info > div:nth-child(1)::after {
+  content: "";
   height: 25px;
   border-right: 1px solid white;
-  width: .01em;
+  width: 0.01em;
 }
 
 .contact-info span {
@@ -105,19 +107,18 @@
   width: 20px; /* Adjust the size of social icons */
   margin-right: 10px;
 }
-
-
-
+.social-icons i {
+  margin-left: 30px;
+}
 
 .navigation-bar {
   height: 70px;
   /* background-color: #333; */
-  color: #fff;
+  color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  
+
   width: 80%;
   margin-left: 10%;
 }
@@ -132,7 +133,7 @@
 }
 
 .custom-link {
-  color: #fff;
+  color: var(--secondary-color);
   text-decoration: none;
   margin-right: 20px;
   position: relative;
