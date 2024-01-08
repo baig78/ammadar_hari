@@ -10,5 +10,5 @@
 }
 
 .image-carousel .carousel .control-dots .dot {
-  background-color: red !important;
+  background-color: var(--primary-color) !important;
 }
