@@ -1,3 +1,30 @@
 .card-body .card-title {
   color: var(--section-heading);
 }
+
+.section-heading-services {
+  position: relative;
+  text-align: center;
+  color: var(--section-heading);
+  font-size: 24px;
+  margin: 40px 0;
+  font-weight: 600;
+}
+
+.section-heading-services::before,
+.section-heading-services::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 10%;
+  height: 1px;
+  background-color: var(--primary-color);
+}
+
+.section-heading-services::before {
+  left: 345px;
+}
+
+.section-heading-services::after {
+  right: 345px;
+}

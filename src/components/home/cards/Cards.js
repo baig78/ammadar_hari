@@ -34,13 +34,13 @@ const Cards = () => {
   return (
     <>
       <div class="section">
-        <div class="section-heading">Our Services</div>
+        <div class="section-heading-services">Our Services</div>
         <div className="d-flex flex-wrap">
           {cardsData.map((card, index) => (
             <Card
               key={index}
               style={{
-                width: "21rem",
+                width: "22rem",
                 margin: "10px",
                 border: "1px solid #ebebeb",
               }}

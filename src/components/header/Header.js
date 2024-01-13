@@ -30,28 +30,31 @@ const Header = () => {
   return (
     <>
       <div className={`top-header ${scrolling ? "scrolled" : ""}`}>
-        <div class="header">
-          <div class="contact-info">
-            <div>
-              {/* <img src="phone-icon.png" alt="Phone"/> */}
-              <i class="fas fa-phone-alt"></i>&nbsp;
-              <span>+1 703-228-9195</span>
+        <Container>
+          <div class="header">
+            <div class="contact-info">
+              <div>
+                {/* <img src="phone-icon.png" alt="Phone"/> */}
+                <i class="fas fa-phone-alt"></i>&nbsp;
+                <span>+1 703-228-9195</span>
+              </div>
+              <div>
+                {/* <img src="email-icon.png" alt="Email"/> */}
+                <i class="far fa-envelope"></i> &nbsp;
+                <span>info@Ammadar.com</span>
+              </div>
             </div>
-            <div>
-              {/* <img src="email-icon.png" alt="Email"/> */}
-              <i class="far fa-envelope"></i> &nbsp;
-              <span>info@Ammadar.com</span>
+            <div class="social-icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-instagram"></i>
             </div>
           </div>
-          <div class="social-icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-instagram"></i>
-          </div>
-        </div>
+        </Container>
+
         <div>
-          <Navbar expand="lg" sticky="top" className=" p-3 ">
+          <Navbar>
             <Container>
               <Navbar.Brand href="/">
                 <img

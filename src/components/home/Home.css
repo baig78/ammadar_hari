@@ -40,7 +40,7 @@
 .section {
   text-align: center;
   position: relative;
-  padding: 60px 10px;
+  padding: 60px 0px;
 }
 .section > p {
   color: #000;
@@ -131,7 +131,7 @@
   height: 400px;
   color: var(--secondary-color);
   text-align: center;
-  padding: 50px;
+  padding: 115px;
   z-index: 1;
 }
 
@@ -187,7 +187,7 @@
 }
 .contact-section > div {
   border-bottom: 1px solid #ffffff57;
-  width: 80%;
+  /* width: 80%; */
   /* margin-left: 10%; */
 }
 
@@ -268,7 +268,7 @@
 
 .testimonial {
   font-size: 20px;
-  padding: 0px 70px;
+  /* padding: 0px 70px; */
   color: gray !important;
 }
 .carousel .slider-wrapper {
@@ -366,8 +366,8 @@ a:hover {
 .subscribe-form input {
   width: 100%;
   padding: 14px 28px;
-  background: #2e2e2e;
-  border: 1px solid #2e2e2e;
+  background: var(--gray-background);
+  border: 1px solid var(--gray-background);
   color: #fff;
 }
 

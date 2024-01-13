@@ -79,10 +79,6 @@ const Footer = () => {
                 Don’t miss to subscribe to our new feeds, kindly fill the form
                 below.
               </p>
-              {/* <div class="input-container">
-                <input type="text" placeholder="Username" />
-                <i class="fas fa-user"></i>
-              </div> */}
               <div class="subscribe-form">
                 <form action="#">
                   <input type="text" placeholder="Email Address" />

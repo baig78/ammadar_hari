@@ -1,4 +1,4 @@
-/* :root {
+:root {
   --primary-color: #ef0007;
   --secondary-color: #fff;
   --header-top: #333333d1;
@@ -10,6 +10,23 @@
   --border-bottom-active: #ef0007;
   --hover-color-onbutton: #cc0000;
   --gray-text: gray;
+  --carousel-overlay: #353a41cd;
+}
+
+/* :root {
+  --primary-color: #0453ad;
+  --secondary-color: #fff;
+  --header-top: #0453adeb;
+  --overlay-color: rgba(0, 0, 0, 0.5);
+  --black-background: #0453ad;
+  --gray-background: #0453ad9e;
+  --section-heading: #0453ad;
+  --footer-icon-color: #ef0007;
+  --border-bottom-active: #fff;
+  --hover-color-onbutton: #0f75e9;
+  --gray-text: #fff;
+            --carousel-overlay: #0453ad8c
+
 } */
 
 :root {
@@ -24,4 +41,5 @@
   --border-bottom-active: #fff;
   --hover-color-onbutton: #0f75e9;
   --gray-text: #fff;
+  --carousel-overlay: #0453ad8c;
 }
