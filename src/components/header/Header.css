@@ -1,13 +1,16 @@
 /* Add this CSS in your stylesheet or style block */
 .top-header {
-  position: absolute;
+  position: fixed;
   top: 0px;
   z-index: 999;
   width: 100%;
-  background-color: #333333d1;
+  /* background-color: var(--header-top); */
 }
+.top-header.scrolled {
+  background-color: var(--header-top);
+}
+
 .navbar {
-  /* background-color: #333333d1; */
   color: white;
   padding: 15px;
   display: flex;
@@ -32,7 +35,7 @@
 }
 
 .nav-links li:hover {
-  background-color: #555;
+  background-color: var(--gray-background);
 }
 
 /* Adjustments for a better mobile experience */
@@ -61,13 +64,12 @@
 /* new styles */
 .header {
   height: 40px;
-  /* background-color: #333333d1; */
   color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  border-bottom: 1px solid var(--secondary-color); /* Add a bottom border */
+  border-bottom: 1px solid #838383;
   width: 80%;
   margin-left: 10%;
 }
@@ -113,7 +115,6 @@
 
 .navigation-bar {
   height: 70px;
-  /* background-color: #333; */
   color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
@@ -144,5 +145,5 @@
 }
 
 .custom-link.active {
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--border-bottom-active);
 }

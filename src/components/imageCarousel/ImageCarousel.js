@@ -19,33 +19,45 @@ const ImageCarousel = () => {
         >
           <div className="position-relative">
             <img src={image1} alt="image1" />
+            <div
+              className="overlay"
+              style={{ backgroundColor: "#0453ad8c", zIndex: "0" }}
+            />
             <div className="position-absolute top-50 start-50 translate-middle text-light">
               <h1>Welcome to Ammadar</h1>
               <h2 className="testclass">Will Add Value To Your Business</h2>
-              <button class="custom-btn red-btn">Read More</button>
-              <button class="custom-btn gray-transparent-btn">
+              <button className="custom-btn red-btn">Read More</button>
+              <button className="custom-btn gray-transparent-btn">
                 Get in Touch
               </button>
             </div>
           </div>
           <div className="position-relative">
             <img src={image2} alt="image2" />
+            <div
+              className="overlay"
+              style={{ backgroundColor: "#0453ad8c", zIndex: "0" }}
+            />
             <div className="position-absolute top-50 start-50 translate-middle text-light">
               <h1>Welcome to Ammadar</h1>
               <h2>Will Add Value To Your Business</h2>
-              <button class="custom-btn red-btn">Read More</button>
-              <button class="custom-btn gray-transparent-btn">
+              <button className="custom-btn red-btn">Read More</button>
+              <button className="custom-btn gray-transparent-btn">
                 Get in Touch
               </button>
             </div>
           </div>
           <div className="position-relative">
             <img src={image3} alt="image3" />
+            <div
+              className="overlay"
+              style={{ backgroundColor: "#0453ad8c", zIndex: "0" }}
+            />
             <div className="position-absolute top-50 start-50 translate-middle text-light">
               <h1>Welcome to Ammadar</h1>
               <h2>Will Add Value To Your Business</h2>
-              <button class="custom-btn red-btn">Read More</button>
-              <button class="custom-btn gray-transparent-btn">
+              <button className="custom-btn red-btn">Read More</button>
+              <button className="custom-btn gray-transparent-btn">
                 Get in Touch
               </button>
             </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -9,10 +9,27 @@ import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
-      <div className="top-header">
+      <div className={`top-header ${scrolling ? "scrolled" : ""}`}>
         <div class="header">
           <div class="contact-info">
             <div>
@@ -87,38 +104,7 @@ const Header = () => {
               </Navbar.Collapse>
             </Container>
           </Navbar>
-          {/* <ImageCarousel /> */}
-          {/* </div> */}
         </div>
-
-        {/* <nav className="navbar">
-      <h3 className="logo">Logo</h3>
-
-      <ul className="nav-links">
-        <Link to="/">
-          <li>Home</li>
-        </Link>
-        <Link to="/service">
-          <li>Service</li>
-        </Link>
-        <Link to="/industries">
-          <li>Industries</li>
-        </Link>
-        <Link to="/carrier">
-          <li>Carrier</li>
-        </Link>
-        <Link to="/news">
-          <li>News</li>
-        </Link>
-        <Link to="/company">
-          <li>Company</li>
-        </Link>
-        <Link to="/contact">
-          <li>Contact Us</li>
-        </Link>
-      </ul>
-    </nav> */}
-        {/* href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" */}
       </div>
     </>
   );

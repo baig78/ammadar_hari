@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "./components/header/Header";
@@ -8,6 +9,7 @@ import Services from "./components/services/Services";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import About from "./components/about/About";
+import ChooseColor from "./components/chooseColor/ChooseColor";
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
           <Route path="/services" component={Services} />
           <Route path="/about" exact component={About} />
         </Switch>
+        <ChooseColor />
         <Footer />
       </Router>
     </>

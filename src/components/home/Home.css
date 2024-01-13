@@ -49,7 +49,7 @@
 .section-heading {
   position: relative;
   text-align: center;
-  color: #333;
+  color: var(--section-heading);
   font-size: 24px;
   margin: 40px 0;
   font-weight: 600;
@@ -76,7 +76,7 @@
 .section-heading-testimonial {
   position: relative;
   text-align: center;
-  color: #333;
+  color: var(--section-heading);
   font-size: 24px;
   margin: 40px 0;
   font-weight: 600;
@@ -142,7 +142,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
+  background-color: var(--overlay-color);
   z-index: -1;
 }
 
@@ -169,20 +169,26 @@
 }
 
 .red-btn:hover {
-  background-color: #cc0000;
+  background-color: var(--hover-color-onbutton);
 }
 
 /* footer section */
+.contact-section h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
 .contact-section {
-  background-color: #000;
+  background-color: var(--black-background);
   color: var(--secondary-color);
-  padding: 50px 0;
+  padding: 35px 0 0px;
   text-align: center;
 }
 .contact-section > div {
   border-bottom: 1px solid #ffffff57;
   width: 80%;
-  margin-left: 10%;
+  /* margin-left: 10%; */
 }
 
 .contact-subsection {
@@ -190,10 +196,10 @@
 }
 
 .contact-icon {
-  color: var(--primary-color);
+  color: var(--footer-icon-color);
   font-size: 36px !important;
-  margin-bottom: 10px;
-  float: left;
+  /* margin-bottom: 10px;
+  float: left; */
 }
 
 .contact-heading {
@@ -209,7 +215,7 @@
 }
 
 .copyright-section {
-  background-color: #555; /* Gray background color */
+  background-color: var(--gray-background); /* Gray background color */
   color: var(--secondary-color); /* White text color */
   text-align: center;
   padding: 10px 0;
@@ -247,6 +253,13 @@
     font-size: 15px !important;
     padding: 0px 0px !important;
   }
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
 }
 
 .text-justify {
@@ -264,4 +277,110 @@
 
 .testimonial-section .carousel .slider-wrapper {
   height: 200px !important;
+}
+
+/* .cta-text {
+  text-align: left;
+  margin-left: 20px;
+} */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--black-background);
+  color: var(--secondary-color);
+  padding: 35px 0;
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  margin-right: 10px; /* Adjust the spacing between icon and text */
+}
+
+.text-container {
+  flex-grow: 1;
+}
+
+.footer-section-bottom {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  color: var(--gray-text);
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+li:hover {
+  /* color: red; */
+  cursor: pointer;
+}
+
+/* a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+} */
+
+.footer-section-botton1 {
+  width: 33%;
+  text-align: left;
+}
+
+.footer-section-botton1 p {
+  color: var(--gray-text);
+}
+
+.footer-section-botton3 {
+  width: 33%;
+  text-align: left;
+}
+
+.footer-section-botton3 p {
+  color: var(--gray-text);
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2e2e2e;
+  border: 1px solid #2e2e2e;
+  color: #fff;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: var(--footer-icon-color);
+  padding: 15px 20px;
+  border: 1px solid var(--footer-icon-color);
+  top: 0;
+}
+
+.subscribe-form button i {
+  color: #fff;
+  font-size: 18px;
 }

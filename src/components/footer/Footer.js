@@ -1,92 +1,99 @@
+import { Link } from "@mui/material";
 import React from "react";
 import { Container } from "react-bootstrap";
 
 const Footer = () => {
   return (
     <>
-      {/* <section class="contact-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 contact-subsection">
-              <i class="fas fa-map-marker-alt contact-icon"></i>
-              <h3 class="contact-heading">Find Us</h3>
-              <p>TX, USA</p>
-            </div>
-
-            <div class="col-md-4 contact-subsection">
-              <i class="fas fa-phone-alt contact-icon"></i>
-              <h3 class="contact-heading">Call Us</h3>
-              <p>903-343-3433</p>
-            </div>
-
-            <div class="col-md-4 contact-subsection">
-              <i class="far fa-envelope contact-icon"></i>
-              <h3 class="contact-heading">Mail Us</h3>
-              <p>info@dsffdsf.com</p>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className="contact-section">
         <Container>
-          <div className="footer-cta pt-5 pb-5">
-            <div className="row">
-              <div className="col-xl-4 col-md-4 mb-30">
-                <div className="single-cta">
-                  <i class="fas fa-map-marker-alt contact-icon"></i>
-                  <div className="cta-text">
-                    <h4>Find us</h4>
-                    <span>USA</span>
-                  </div>
-                </div>
+          <div className="footer-container">
+            <div className="footer-section">
+              <div className="icon-container">
+                <i class="fas fa-map-marker-alt contact-icon"></i>
               </div>
-
-              <div className="col-xl-4 col-md-4 mb-30">
-                <div className="single-cta">
-                  <i class="fas fa-phone-alt contact-icon"></i>
-                  <div className="cta-text">
-                    <h4>Call us</h4>
-                    <span>+1 (703) 228-9195</span>
-                  </div>
-                </div>
+              <div className="text-start">
+                <h4>Find us</h4>
+                <span className="text-white-50">USA</span>
               </div>
+            </div>
 
-              <div className="col-xl-4 col-md-4 mb-30">
-                <div className="single-cta">
-                  <i class="far fa-envelope contact-icon"></i>
-                  <div className="cta-text">
-                    <h4>Mail us</h4>
-                    <span>hr@upeopletech.com</span>
-                  </div>
-                </div>
+            <div className="footer-section">
+              <div className="icon-container">
+                <i class="fas fa-phone-alt contact-icon"></i>
+              </div>
+              <div className="text-start">
+                <h4>Call us</h4>
+                <span className="text-white-50">+ 123 456 789 0</span>
+              </div>
+            </div>
+
+            <div className="footer-section">
+              <div className="icon-container">
+                <i class="far fa-envelope contact-icon"></i>
+              </div>
+              <div className="text-start">
+                <h4>Email</h4>
+                <span className="text-white-50">hr@upeopletech.com</span>
               </div>
             </div>
           </div>
         </Container>
       </section>
-      <section class="contact-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 contact-subsection">
+
+      <section className="contact-section">
+        <Container>
+          <div className="footer-container">
+            <div className="footer-section-botton1">
               <img src="../../assets/logo.png" alt="Logo" class="brand-logo" />
-              <p class="contact-text">
+              <p>
                 Ammadar is located in Lexington, South Carolina USA. Ammadar is
                 a fast growing, goal-oriented Information Technology (IT)
-                Services Company that helps.
+                Services Company that helps. &nbsp;
+                <Link
+                  style={{
+                    color: "var(--gray-text)",
+                    textDecoration: "underline",
+                    cursor: "pointer",
+                  }}
+                >
+                  Read More
+                </Link>
               </p>
             </div>
-
-            <div class="col-md-4 contact-subsection">
-              <h3 class="contact-heading">Call Us</h3>
-              <p class="contact-text">903-343-3433</p>
+            <div
+              style={{ textAlign: "left" }}
+              className="footer-section-botton2"
+            >
+              <h4 style={{ marginBottom: "15px" }}>Useful Links</h4>
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+              </ul>
             </div>
-
-            <div class="col-md-4 contact-subsection">
-              <h3 class="contact-heading">Subscribe</h3>
-              <p class="contact-text">info@dsffdsf.com</p>
+            <div className="footer-section-botton3">
+              <h4 style={{ marginBottom: "15px" }}>Subscribe</h4>
+              <p>
+                Don’t miss to subscribe to our new feeds, kindly fill the form
+                below.
+              </p>
+              {/* <div class="input-container">
+                <input type="text" placeholder="Username" />
+                <i class="fas fa-user"></i>
+              </div> */}
+              <div class="subscribe-form">
+                <form action="#">
+                  <input type="text" placeholder="Email Address" />
+                  <button>
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
 
       <div class="copyright-section">
