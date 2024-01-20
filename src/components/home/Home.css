@@ -320,11 +320,14 @@ img {
 ul {
   list-style: none;
   padding: 0;
-  color: var(--gray-text);
 }
 
 li {
   margin-bottom: 8px;
+}
+ul li a {
+  text-decoration: none;
+  color: var(--gray-text);
 }
 
 li:hover {
@@ -383,4 +386,81 @@ a:hover {
 .subscribe-form button i {
   color: #fff;
   font-size: 18px;
+}
+
+.testclass {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* For Webkit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color); /* Red color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(
+    204,
+    204,
+    204,
+    0.5
+  ); /* Track background color (adjust as needed) */
+}
+
+/* For Firefox */
+* {
+  scrollbar-color: var(--primary-color) rgba(204, 204, 204, 0.5); /* Red color for thumb, adjust track color as needed */
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color); /* Red color */
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(
+    204,
+    204,
+    204,
+    0.5
+  ); /* Transparent track background color */
+}
+
+.image-carousel .position-relative h1,
+.image-carousel .position-relative h2,
+.image-carousel .position-relative button {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.image-carousel .position-relative:hover h1,
+.image-carousel .position-relative:hover h2,
+.image-carousel .position-relative:hover button {
+  opacity: 9;
+}
+
+/* Typing animation */
+.image-carousel .position-relative h1,
+.image-carousel .position-relative h2 {
+  overflow: hidden; /* Hide overflow to create typing effect */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: typing-animation 2s steps(40, end) forwards;
+}
+
+@keyframes typing-animation {
+  from {
+    width: 0; /* Start with zero width, creating the typing effect */
+  }
+  to {
+    width: 100%; /* Fully reveal the text */
+  }
 }

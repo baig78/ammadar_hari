@@ -5,28 +5,28 @@ import "../cards/Cards.css";
 const Cards = () => {
   const cardsData = [
     {
-      title: "Consulting",
-      text: "Lorem Ipsum is simply dummy text of the printing and.",
+      title: "Consulting & Development Services",
+      text: "At Ammadar we believe in supporting our clients in every situation.",
       iconClass: "far fa-snowflake",
     },
     {
       title: "Technology",
-      text: "Another example text for the second card.",
+      text: "Our Off-shore development centre is based on a partnership spirit with a long-term view.",
       iconClass: "fas fa-university",
     },
     {
       title: "Development Services",
-      text: "And here's some more text for the third card.",
+      text: "We specialize in software development, maintenance, testing, and business transformation.",
       iconClass: "fas fa-tools",
     },
     {
       title: "Application Outsourcing",
-      text: "Another example text for the second card.",
+      text: "Ammadar optimizes application portfolios, aligns IT investments, and provides outsourcing solutions.",
       iconClass: "fas fa-university",
     },
     {
       title: "E-COMMERCE & e-Learning Solutions",
-      text: "And here's some more text for the third card.",
+      text: "We specialize in e-Commerce solutions for diverse sectors, offering customization.",
       iconClass: "fas fa-tools",
     },
   ];

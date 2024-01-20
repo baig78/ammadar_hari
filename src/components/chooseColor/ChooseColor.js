@@ -4,24 +4,24 @@ const ChooseColor = () => {
   const changeTheme = (theme) => {
     const styleElement = document.createElement("style");
     let styles = "";
-    if (theme === "blue") {
-      styles = `
-          :root {
-            --primary-color: #0453ad;
-            --secondary-color: #fff;
-            --header-top: #0453adeb;
-            --overlay-color: rgba(0, 0, 0, 0.5);
-            --black-background: #0453ad;
-            --gray-background: #0453ad9e;
-            --section-heading: #0453ad;
-            --footer-icon-color: #ef0007;
-            --border-bottom-active: #fff;
-            --hover-color-onbutton: #0f75e9;
-            --gray-text: #fff;
-            --carousel-overlay: #0453ad8c
-          }
-            `;
-    }
+    // if (theme === "blue") {
+    //   styles = `
+    //       :root {
+    //         --primary-color: #0453ad;
+    //         --secondary-color: #fff;
+    //         --header-top: #0453adeb;
+    //         --overlay-color: rgba(0, 0, 0, 0.5);
+    //         --black-background: #0453ad;
+    //         --gray-background: #0453ad9e;
+    //         --section-heading: #0453ad;
+    //         --footer-icon-color: #ef0007;
+    //         --border-bottom-active: #fff;
+    //         --hover-color-onbutton: #0f75e9;
+    //         --gray-text: #fff;
+    //         --carousel-overlay: #0453ad8c
+    //       }
+    //         `;
+    // }
     if (theme === "red") {
       styles = `
         :root {
@@ -42,26 +42,25 @@ const ChooseColor = () => {
         }
             `;
     }
-    if (theme === "green") {
-      styles = `
-        :root {
-          --primary-color: #009db7;
-          --secondary-color: #fff;
-          --header-top: #009db7ed;
-          --overlay-color: rgba(0, 0, 0, 0.5);
-          --black-background: #009db7;
-          --gray-background: #78b2bb;
-          --section-heading: #009db7;
-          --footer-icon-color: #ef0007;
-          --border-bottom-active: #009db7;
-          --hover-color-onbutton: #08b8d5;
-          --gray-text: #fff;
-          --carousel-overlay: #004c58ad
+    // if (theme === "green") {
+    //   styles = `
+    //     :root {
+    //       --primary-color: #009db7;
+    //       --secondary-color: #fff;
+    //       --header-top: #009db7ed;
+    //       --overlay-color: rgba(0, 0, 0, 0.5);
+    //       --black-background: #009db7;
+    //       --gray-background: #78b2bb;
+    //       --section-heading: #009db7;
+    //       --footer-icon-color: #ef0007;
+    //       --border-bottom-active: #009db7;
+    //       --hover-color-onbutton: #08b8d5;
+    //       --gray-text: #fff;
+    //       --carousel-overlay: #004c58ad
 
-
-        }
-            `;
-    }
+    //     }
+    //         `;
+    // }
     styleElement.innerHTML = styles;
     document.head.appendChild(styleElement);
     // document.head.removeChild(styleElement);

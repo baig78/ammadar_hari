@@ -4,6 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import image1 from "../../assets/1.png";
 import image2 from "../../assets/2.png";
 import image3 from "../../assets/3.png";
+import { Link } from "react-router-dom";
 
 const ImageCarousel = () => {
   return (
@@ -30,10 +31,14 @@ const ImageCarousel = () => {
               <h1>Welcome to Ammadar</h1>
               <h2 className="testclass">Will Add Value To Your Business</h2>
               <div style={{ marginTop: "50px" }}>
-                <button className="custom-btn red-btn">Read More</button>
-                <button className="custom-btn gray-transparent-btn">
-                  Get in Touch
-                </button>
+                <Link to="/about">
+                  <button className="custom-btn red-btn">Read More</button>
+                </Link>
+                <Link to="/contact">
+                  <button className="custom-btn gray-transparent-btn">
+                    Get in Touch
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -48,11 +53,17 @@ const ImageCarousel = () => {
             />
             <div className="position-absolute top-50 start-50 translate-middle text-light">
               <h1>Welcome to Ammadar</h1>
-              <h2>Will Add Value To Your Business</h2>
-              <button className="custom-btn red-btn">Read More</button>
-              <button className="custom-btn gray-transparent-btn">
-                Get in Touch
-              </button>
+              <h2 className="testclass">Will Add Value To Your Business</h2>
+              <div style={{ marginTop: "50px" }}>
+                <Link to="/about">
+                  <button className="custom-btn red-btn">Read More</button>
+                </Link>
+                <Link to="/contact">
+                  <button className="custom-btn gray-transparent-btn">
+                    Get in Touch
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
           <div className="position-relative">
@@ -66,11 +77,17 @@ const ImageCarousel = () => {
             />
             <div className="position-absolute top-50 start-50 translate-middle text-light">
               <h1>Welcome to Ammadar</h1>
-              <h2>Will Add Value To Your Business</h2>
-              <button className="custom-btn red-btn">Read More</button>
-              <button className="custom-btn gray-transparent-btn">
-                Get in Touch
-              </button>
+              <h2 className="testclass">Will Add Value To Your Business</h2>
+              <div style={{ marginTop: "50px" }}>
+                <Link to="/about">
+                  <button className="custom-btn red-btn">Read More</button>
+                </Link>
+                <Link to="/contact">
+                  <button className="custom-btn gray-transparent-btn">
+                    Get in Touch
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </Carousel>

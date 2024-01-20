@@ -4,6 +4,7 @@ import ImageCarousel from "../imageCarousel/ImageCarousel";
 import { Container } from "react-bootstrap";
 import Cards from "./cards/Cards";
 import Testimonial from "./testimonial/Testimonial";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -45,11 +46,13 @@ const Home = () => {
                 Contact us today to get a free consultation!
               </h1>
               <p class="contact-paragraph">
-                U People Technologies has the services and solutions to help you
-                achieve your business objectives. Contact us for a quick phone
-                call to discuss your requirements.
+                Ammadar offers the services and solutions to meet your business
+                goals. Reach out for a brief phone discussion to explore your
+                needs.
               </p>
-              <button class="red-btn">Free Consultation</button>
+              <Link to="/contact">
+                <button className="red-btn">Free Consultation</button>
+              </Link>
             </div>
           </div>
         </div>

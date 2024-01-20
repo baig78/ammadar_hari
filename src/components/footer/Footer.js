@@ -1,6 +1,6 @@
-import { Link } from "@mui/material";
 import React from "react";
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
               <div className="text-start">
                 <h4>Call us</h4>
-                <span className="text-white-50">+ 123 456 789 0</span>
+                <span className="text-white-50">+1-703-228-9195</span>
               </div>
             </div>
 
@@ -34,7 +34,7 @@ const Footer = () => {
               </div>
               <div className="text-start">
                 <h4>Email</h4>
-                <span className="text-white-50">hr@upeopletech.com</span>
+                <span className="text-white-50">info@ammadar.com</span>
               </div>
             </div>
           </div>
@@ -51,6 +51,7 @@ const Footer = () => {
                 a fast growing, goal-oriented Information Technology (IT)
                 Services Company that helps. &nbsp;
                 <Link
+                  to="/about"
                   style={{
                     color: "var(--gray-text)",
                     textDecoration: "underline",
@@ -67,10 +68,18 @@ const Footer = () => {
             >
               <h4 style={{ marginBottom: "15px" }}>Useful Links</h4>
               <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact</li>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+                <li>
+                  <Link to="/services">Services</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
               </ul>
             </div>
             <div className="footer-section-botton3">

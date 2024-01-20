@@ -36,11 +36,10 @@ const Testimonial = () => {
             <div className="center-content">
               <p className="text-justify testimonial">
                 <i>
-                  Embracing innovation at its core, our dynamic IT company
-                  thrives on crafting cutting-edge solutions that propel
-                  businesses into the digital future. With a commitment to
-                  excellence, we seamlessly blend expertise and creativity to
-                  redefine the possibilities of technology
+                  "Choosing Ammadar was a game-changer for our business. Their
+                  tailored solutions and exceptional support propelled our
+                  growth. The team's expertise and commitment exceeded our
+                  expectations."
                 </i>
               </p>
             </div>
@@ -49,11 +48,11 @@ const Testimonial = () => {
             <div className="center-content">
               <p className="text-justify testimonial">
                 <i>
-                  Embracing innovation at its core, our dynamic IT company
-                  thrives on crafting cutting-edge solutions that propel
-                  businesses into the digital future. With a commitment to
-                  excellence, we seamlessly blend expertise and creativity to
-                  redefine the possibilities of technology
+                  "Ammadar's e-Commerce solutions transformed our online
+                  presence. From personalized website design to seamless
+                  integration, their services have been instrumental in
+                  enhancing our customer experience. Highly recommend their
+                  expertise."
                 </i>
               </p>
             </div>
@@ -62,11 +61,10 @@ const Testimonial = () => {
             <div className="center-content">
               <p className="text-justify testimonial">
                 <i>
-                  Embracing innovation at its core, our dynamic IT company
-                  thrives on crafting cutting-edge solutions that propel
-                  businesses into the digital future. With a commitment to
-                  excellence, we seamlessly blend expertise and creativity to
-                  redefine the possibilities of technology
+                  "Working with Ammadar has been a breeze. Their
+                  professionalism, quick response, and innovative approach set
+                  them apart. Our collaboration has not only met but surpassed
+                  our expectations. Thank you for the outstanding service!"
                 </i>
               </p>
             </div>

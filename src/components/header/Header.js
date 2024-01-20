@@ -3,20 +3,21 @@ import "./Header.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-// import ImageCarousel from "../imageCarousel/ImageCarousel";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
   const [scrolling, setScrolling] = useState(false);
+  const [showContactInfo, setShowContactInfo] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrolling(true);
+        setShowContactInfo(false);
       } else {
         setScrolling(false);
+        setShowContactInfo(true);
       }
     };
 
@@ -27,30 +28,34 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when the route changes
+  }, [location.pathname]);
+
   return (
     <>
       <div className={`top-header ${scrolling ? "scrolled" : ""}`}>
         <Container>
-          <div class="header">
-            <div class="contact-info">
-              <div>
-                {/* <img src="phone-icon.png" alt="Phone"/> */}
-                <i class="fas fa-phone-alt"></i>&nbsp;
-                <span>+1 703-228-9195</span>
+          {showContactInfo && (
+            <div className="header">
+              <div className="contact-info">
+                <div>
+                  <i className="fas fa-phone-alt"></i>&nbsp;
+                  <span>+1 703-228-9195</span>
+                </div>
+                <div>
+                  <i className="far fa-envelope"></i> &nbsp;
+                  <span>info@Ammadar.com</span>
+                </div>
               </div>
-              <div>
-                {/* <img src="email-icon.png" alt="Email"/> */}
-                <i class="far fa-envelope"></i> &nbsp;
-                <span>info@Ammadar.com</span>
+              <div className="social-icons">
+                <i className="fab fa-facebook-f"></i>
+                <i className="fab fa-twitter"></i>
+                <i className="fab fa-youtube"></i>
+                <i className="fab fa-instagram"></i>
               </div>
             </div>
-            <div class="social-icons">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-youtube"></i>
-              <i class="fab fa-instagram"></i>
-            </div>
-          </div>
+          )}
         </Container>
 
         <div>
@@ -60,7 +65,7 @@ const Header = () => {
                 <img
                   src="../../assets/logo.png"
                   alt="Logo"
-                  class="brand-logo"
+                  className="brand-logo"
                 />
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -69,9 +74,9 @@ const Header = () => {
                 className="justify-content-end"
               >
                 <Nav>
-                  {/* <img src="../../assets/logo.png" alt="Logo" class="brand-logo" /> */}
-                  {/* <div class="link-container"> */}
                   <Link
+                    smooth={true}
+                    duration={500}
                     to="/"
                     className={`custom-link ${
                       location.pathname === "/" ? "active" : ""
@@ -80,6 +85,8 @@ const Header = () => {
                     Home
                   </Link>
                   <Link
+                    smooth={true}
+                    duration={500}
                     to="/about"
                     className={`custom-link ${
                       location.pathname === "/about" ? "active" : ""
@@ -88,6 +95,8 @@ const Header = () => {
                     About
                   </Link>
                   <Link
+                    smooth={true}
+                    duration={500}
                     to="/services"
                     className={`custom-link ${
                       location.pathname === "/services" ? "active" : ""
@@ -96,6 +105,8 @@ const Header = () => {
                     Services
                   </Link>
                   <Link
+                    smooth={true}
+                    duration={500}
                     to="/contact"
                     className={`custom-link ${
                       location.pathname === "/contact" ? "active" : ""
@@ -112,4 +123,5 @@ const Header = () => {
     </>
   );
 };
+
 export default Header;
